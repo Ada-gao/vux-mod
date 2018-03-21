@@ -1,0 +1,47 @@
+@import 'weui/base/reset.less';
+
+/** env = windows **/
+::-webkit-input-placeholder {
+  font-family: @weuiFontDefault;
+}
+
+/** prevent default menu callout **/
+a {
+  -webkit-touch-callout: none;
+}
+
+/*cell-box*/
+.weui-cells {
+  margin-top: 0;
+}
+
+/*XInput & popup-picker*/
+.weui-cells__title {
+  color: #333;
+  background-color: #eee;
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  padding: 10px 40px;
+  font-size: 20px; /*px*/
+}
+.weui-cells .weui-cell {
+  padding: 30px  40px;
+  .weui-cell__ft::after {
+    width: 20px;
+    height: 20px;
+    border-width: 4px 4px 0 0;
+    margin-top: -15px;
+  }
+}
+/*popup-picker*/
+.vux-cell-primary {
+  padding-right: 50px;
+}
+
+/*XHeader*/
+.vux-header .vux-header-left .left-arrow::before {
+  border-width: 4px 0 0 4px;
+}
+
+/*popup-picker*/
+
